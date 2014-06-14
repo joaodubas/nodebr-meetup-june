@@ -27,8 +27,8 @@ function readFile(filepath) {
 
 function* template() {
   try {
-    let tmpl = yield readFile('bin/fixture/template.html');
-    let content = yield readFile('bin/fixture/content.html');
+    let tmpl = yield readFile('fixture/template.html');
+    let content = yield readFile('fixture/content.html');
 
     console.log(tmpl.replace('{{ content }}', content.replace(/\n/, '')));
   } catch (e) {

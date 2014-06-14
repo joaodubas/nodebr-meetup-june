@@ -35,14 +35,14 @@ function* readAndWrite() {
   let tmpl, content;
 
   try {
-    tmpl = yield read('bin/fixture/template.html');
-    content = yield read('bin/fixture/content.html');
+    tmpl = yield read('fixture/template.html');
+    content = yield read('fixture/content.html');
   } catch (e) {
     console.log('Something went wrong: ', e.message);
   }
 
   let html = tmpl.replace('{{ content }}', content);
-  yield write('bin/fixture/index.html', html);
+  yield write('fixture/index.html', html);
 }
 
 run(readAndWrite);
