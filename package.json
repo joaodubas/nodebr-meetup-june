@@ -1,0 +1,12 @@
+{
+  "name": "nodebr-meetup-june",
+  "version": "0.0.1",
+  "description": "Iterators, Generators, and Co-routines",
+  "keywords": ["generator", "iterator", "coroutine"],
+  "dependencies": {
+    "co": "*",
+    "superagent": "*",
+    "thunkify": "*"
+  },
+  "license": "MIT"
+}
